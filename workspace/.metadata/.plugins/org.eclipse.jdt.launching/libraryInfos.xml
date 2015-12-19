@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre" version="1.8.0_51">
+<bootpath>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/resources.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/rt.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/sunrsasign.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/jsse.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/jce.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/charsets.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/jfr.jar"/>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/media/adriano/Dados/Programas/java/jdk1.8.0_51/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="/home/adriano/desenvolvimento/tools/java/jdk1.6.0_45" version="1.6.0_45">
 <bootpath>
 <entry path="/home/adriano/desenvolvimento/tools/java/jdk1.6.0_45/jre/lib/resources.jar"/>
@@ -17,6 +36,25 @@
 </extensionDirs>
 <endorsedDirs>
 <entry path="/home/adriano/desenvolvimento/tools/java/jdk1.6.0_45/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45" version="1.6.0_45">
+<bootpath>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/resources.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/rt.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/sunrsasign.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/jsse.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/jce.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/charsets.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/modules/jdk.boot.jar"/>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/media/adriano/Dados/Projeto/Tools/jdk1.6.0_45/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>
