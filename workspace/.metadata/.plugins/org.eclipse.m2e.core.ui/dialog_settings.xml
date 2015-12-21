@@ -4,12 +4,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="br.com.webstore"/>
 			<item value="br.com.ans"/>
 		</list>
 		<list key="name">
+			<item value="WebStore"/>
 			<item value="MavenWeb"/>
 		</list>
 		<list key="artifactId">
+			<item value="WebStore"/>
 			<item value="MavenWeb"/>
 		</list>
 		<list key="projectNameTemplate">
