@@ -1,0 +1,16 @@
+package br.com.ans.modelo.dao;
+
+import br.com.ans.modelo.Usuario;
+
+public class UsuarioDao {
+
+	public void inserir(){
+		
+		Usuario usuario = new Usuario();
+		
+		usuario.setNomeUsuario("null");
+		
+		
+	}
+		
+}
