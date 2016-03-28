@@ -6,22 +6,25 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="usuarioBean" key="selection"/>
+		<item value="listen" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="UsuarioBean"/>
-			<item value="uarioBean"/>
-			<item value="UsuarioBean.usuario."/>
-			<item value="usuarioBean."/>
-			<item value="UsuarioBean."/>
-			<item value="olaMundoSpring"/>
-			<item value="webmvc"/>
-			<item value="commo"/>
+			<item value="listen"/>
+			<item value="listener"/>
+			<item value="lis"/>
+			<item value="liste"/>
+			<item value="colunaEsquerda"/>
+			<item value="olunaDireita1"/>
+			<item value="email"/>
+			<item value="p:outputText"/>
 		</list>
 		<list key="replacehistory">
+			<item value="p:outputLabel"/>
+			<item value="usuarioMBean"/>
+			<item value="suarioMBean"/>
 			<item value="usuarioBean"/>
 			<item value="usuarioBean.usuario"/>
 			<item value="UsuarioBean.usuario."/>
@@ -29,9 +32,9 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="289" key="DIALOG_WIDTH"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="432" key="DIALOG_HEIGHT"/>
+		<item value="269" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="481" key="DIALOG_HEIGHT"/>
 		<item value="81" key="DIALOG_Y_ORIGIN"/>
 		<item value="561" key="DIALOG_X_ORIGIN"/>
 	</section>

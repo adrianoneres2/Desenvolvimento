@@ -4,23 +4,80 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:f="http://java.sun.com/jsf/core">
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Loja virtual</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"></link>
 
-<body>
+</h:head>
 <f:view>
-<h:form>
-	<h:outputLabel>Usuário</h:outputLabel>
-	<h:inputText value="#{login.nome}"/>
-	<br></br>
-	<h:outputLabel>Senha</h:outputLabel>
-	<h:inputText value="#{login.senha}"/>
-	<br></br>
-	<h:commandButton value="Enviar" actionListener="#{login.logar}"/>
-	<br></br>
-	<br></br>
-	<h:outputText value="#{login.logado}" rendered="#{login.logado != null}"/>
-</h:form>
+	<h:body>
+		<h:form id="frm0">
+			<h:commandButton action="#{eventoPessoaBean.ListaParticipantes}"
+				value="Lista essa merda!!!"></h:commandButton>
+		</h:form>
+
+
+		<h:panelGrid border="2" columns="2">
+
+			<h:panelGroup>
+				<h:column>
+					grupo 1 
+			   </h:column>
+			   <h:column>
+					grupo 2
+			   </h:column>
+			   <f:attribute name="rowspan" value="2"/>
+			</h:panelGroup>
+			<h:column>
+	fora 1 
+	</h:column>
+
+			<h:column>
+	fora 2
+	</h:column>
+
+		</h:panelGrid>
+
+		<p:dataTable value="#{eventoPessoaBean.participante}" var="evento"
+			border="1" cellpadding="20" cellspacing="2">
+			  <p:column>
+			  <f:facet name="header">
+                <h:outputText value="Sigla" />
+              </f:facet>
+              	<p:columnGroup>
+              		<p:column>
+						#{evento.siglaRelatorio}
+					</p:column>
+				</p:columnGroup>
+			  </p:column>
+
+			<p:column>
+     	    <f:facet name="header">
+                <h:outputText value="Evento" />
+            </f:facet>
+				#{evento.evento}
+			</p:column>
+
+			<p:column>
+     	    <f:facet name="header">
+                <h:outputText value="Descrição" />
+            </f:facet>
+				#{evento.descricaoEvento}
+			</p:column>
+
+			<p:column>
+     	    <f:facet name="header">
+                <h:outputText value="Total" />
+            </f:facet>
+				#{evento.totalRegistros}
+			</p:column>
+
+		</p:dataTable>
+
+
+	</h:body>
 </f:view>
-</body>
 
 </html>

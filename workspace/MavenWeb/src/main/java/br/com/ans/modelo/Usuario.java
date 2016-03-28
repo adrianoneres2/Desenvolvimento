@@ -9,16 +9,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "tb_usuario", schema = "loja")
-public class Usuario {
+public class Usuario implements EntidadeBase{
 		
 		@Id
-		@SequenceGenerator(name="sq_idusuario", sequenceName="sq_idusuario", allocationSize=1)
+		@SequenceGenerator(name="sq_idusuario", sequenceName="loja.sq_idusuario", allocationSize = 1, initialValue = 1, schema = "loja")
         @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="sq_idusuario")
 		@Column(name = "id_usuario", nullable = false)
-		private Integer  codigoUsuario;
+		private Long  codigoUsuario;
 		
 		@Column(name = "nm_usuario", nullable = false)
 		private String   nomeUsuario;
@@ -26,7 +27,8 @@ public class Usuario {
 		@Column(name = "nm_senha", nullable = false)
 		private String   senha;
 		
-		@Column(name = "dt_cadastro", nullable = false)
+		@Column(name = "dt_cadastro", nullable = true)
+		@Transient
 		private Date dataCadastro;
 		
 		@Column(name = "ds_complemento")
@@ -54,12 +56,13 @@ public class Usuario {
 		private String   email;
 		
 		@Column(name = "st_usuario_ativo", nullable = false)
+		@Transient
 		private String   usuarioAtivo;
 		
-		public Integer getCodigoUsuario() {
+		public Long getCodigoUsuario() {
 			return codigoUsuario;
 		}
-		public void setCodigoUsuario(Integer codigoUsuario) {
+		public void setCodigoUsuario(Long codigoUsuario) {
 			this.codigoUsuario = codigoUsuario;
 		}
 		public String getNomeUsuario() {
@@ -135,6 +138,10 @@ public class Usuario {
 			this.usuarioAtivo = usuarioAtivo;
 		}
 		
+		public Long getId() {
+			return codigoUsuario;
+		}
+		
 		
 		@Override
 		public int hashCode() {
@@ -166,9 +173,6 @@ public class Usuario {
 			} else if (!nomeUsuario.equals(other.nomeUsuario))
 				return false;
 			return true;
-		}
-
-
-		
+		}		
 		
 }
