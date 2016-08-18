@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Loja virtual</title>
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"></link>
+</h:head>
+<body>
+	<div id="tudo">
+
+		<div id="banner">
+				<div id = "mensagens">
+					<p:messages id="messages" showDetail="true" autoUpdate="true" closable="true"  />
+				</div>
+						
+				<div id="login">
+					<ui:insert name="login" />
+				</div>
+		</div>
+
+		<div id="menu" align="center">
+				<ui:insert name="menu" />
+		</div>
+
+		<div id="Conteudo" align="center">
+				<ui:insert name="conteudo" />
+		</div>
+
+		<div id="rodape" class="rodape">
+			<ui:insert name="rodape" />
+		</div>
+	</div>
+</body>
+</html>
