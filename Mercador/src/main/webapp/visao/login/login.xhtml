@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich">
+
+<ui:composition>
+	<rich:panel id= "idPanelLogin" rendered="#{autenticadorMBean.logado == false}" >
+	<h:form id="idFormLogin">
+		<h:outputLabel id="labelEmail" value="E-mail " />
+		<h:inputText id="inputEmail" value="#{autenticadorMBean.usuario.email}" />
+		<br/>
+		<h:outputLabel id="labelSenha" value="Senha " />
+		<h:inputText id="inputSenha" value="#{autenticadorMBean.usuario.senha}" />
+		<br/>
+		<h:commandButton id="buttonEntrar" value="Entrar" action="#{autenticadorMBean.logar}"  />
+	</h:form>
+	</rich:panel>
+	
+	<rich:panel id= "idPanelSair" rendered="#{autenticadorMBean.logado}">
+	<h:form id="idFormSair">
+		<h:outputLabel id="idLabelUsuarioLogado" value="#{autenticadorMBean.usuario.nomeUsuario}" />
+		<br/>
+		<h:commandButton id="buttonSair" value="Sair" action="#{autenticadorMBean.sair}"  />
+	</h:form>
+	</rich:panel>
+	
+</ui:composition>
+</html>

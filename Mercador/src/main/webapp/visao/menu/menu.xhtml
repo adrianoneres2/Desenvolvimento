@@ -1,0 +1,19 @@
+<ui:composition
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j" 
+	xmlns:rich="http://richfaces.org/rich">
+
+		<h:form name="formMenu" id="idFormMenu">
+		     <rich:toolbar height="15px" rendered="#{autenticadorMBean.logado}" id="idToolBarMenu" >				
+				<rich:dropDownMenu label="::Novo" rendered="#{autenticadorMBean.logado}">
+					<rich:menuItem label="Usuário" id="idMenuItemNovoCadastro" action="#{controleConteudoMBean.definirPagina}" >
+						<f:setPropertyActionListener value="/visao/usuario/cadastroUsuario.xhtml" target="#{controleConteudoMBean.paginaConteudo}"/>
+					</rich:menuItem>
+				</rich:dropDownMenu>
+			</rich:toolbar>
+
+		</h:form>
+</ui:composition>
